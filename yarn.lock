@@ -88,10 +88,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/query-types@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@atls/query-types@npm:0.0.1"
-  checksum: 10/0c42bbcbff3e5ad5427dfe53ca8d20c9158d1f6fc56c5bedc52c4f12513ef69dc59c599d8b76b95cf4c16288ef042cc260b2207a8cbb4de0dc30ef6052d59f94
+"@atls/query-types@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@atls/query-types@npm:0.0.2"
+  checksum: 10/d748d3c8b1245238594d3ccc7bc66e23304b144e3d84e7ba2958d5963ac528f30beed72a46c5642e24956fffa1c75d41c487a7731bec8c448a055116fb46a6ef
   languageName: node
   linkType: hard
 
@@ -99,7 +99,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@atls/rpc-query-payloads@workspace:packages/rpc-query-payloads"
   dependencies:
-    "@atls/query-types": "npm:0.0.1"
+    "@atls/query-types": "npm:0.0.2"
     "@bufbuild/protobuf": "npm:1.10.0"
     class-validator: "npm:0.14.1"
   peerDependencies:

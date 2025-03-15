@@ -139,10 +139,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@atls/query-types", [\
-      ["npm:0.0.1", {\
-        "packageLocation": "../.yarn/berry/cache/@atls-query-types-npm-0.0.1-7bda0d6cff-10.zip/node_modules/@atls/query-types/",\
+      ["npm:0.0.2", {\
+        "packageLocation": "../.yarn/berry/cache/@atls-query-types-npm-0.0.2-4b10578044-10.zip/node_modules/@atls/query-types/",\
         "packageDependencies": [\
-          ["@atls/query-types", "npm:0.0.1"]\
+          ["@atls/query-types", "npm:0.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -152,7 +152,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-query-payloads/",\
         "packageDependencies": [\
           ["@atls/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
-          ["@atls/query-types", "npm:0.0.1"],\
+          ["@atls/query-types", "npm:0.0.2"],\
           ["@bufbuild/protobuf", "npm:1.10.0"],\
           ["class-validator", "npm:0.14.1"]\
         ],\
