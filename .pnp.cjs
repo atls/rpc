@@ -13,11 +13,16 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "template",\
       "reference": "workspace:."\
+    },\
+    {\
+      "name": "@atls/rpc-query-payloads",\
+      "reference": "workspace:packages/rpc-query-payloads"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@atls/rpc-query-payloads", ["workspace:packages/rpc-query-payloads"]],\
     ["template", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -131,6 +136,27 @@ const RAW_RUNTIME_STATE =
           ["@atls/config-typescript", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@atls/query-types", [\
+      ["npm:0.0.1", {\
+        "packageLocation": "../.yarn/berry/cache/@atls-query-types-npm-0.0.1-7bda0d6cff-10.zip/node_modules/@atls/query-types/",\
+        "packageDependencies": [\
+          ["@atls/query-types", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@atls/rpc-query-payloads", [\
+      ["workspace:packages/rpc-query-payloads", {\
+        "packageLocation": "./packages/rpc-query-payloads/",\
+        "packageDependencies": [\
+          ["@atls/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
+          ["@atls/query-types", "npm:0.0.1"],\
+          ["@bufbuild/protobuf", "npm:1.10.0"],\
+          ["class-validator", "npm:0.14.1"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["@atls/webpack-proto-imports-loader", [\
@@ -361,6 +387,15 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-string-parser", "npm:7.24.8"],\
           ["@babel/helper-validator-identifier", "npm:7.24.7"],\
           ["to-fast-properties", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@bufbuild/protobuf", [\
+      ["npm:1.10.0", {\
+        "packageLocation": "../.yarn/berry/cache/@bufbuild-protobuf-npm-1.10.0-7f066cde74-10.zip/node_modules/@bufbuild/protobuf/",\
+        "packageDependencies": [\
+          ["@bufbuild/protobuf", "npm:1.10.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1092,6 +1127,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/node", "npm:22.5.0"],\
           ["undici-types", "npm:6.19.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/validator", [\
+      ["npm:13.12.2", {\
+        "packageLocation": "../.yarn/berry/cache/@types-validator-npm-13.12.2-c7c4fd2a77-10.zip/node_modules/@types/validator/",\
+        "packageDependencies": [\
+          ["@types/validator", "npm:13.12.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1957,6 +2001,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/chrome-trace-event-npm-1.0.3-e0ae3dcd60-10.zip/node_modules/chrome-trace-event/",\
         "packageDependencies": [\
           ["chrome-trace-event", "npm:1.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["class-validator", [\
+      ["npm:0.14.1", {\
+        "packageLocation": "../.yarn/berry/cache/class-validator-npm-0.14.1-f0ce3b1130-10.zip/node_modules/class-validator/",\
+        "packageDependencies": [\
+          ["class-validator", "npm:0.14.1"],\
+          ["@types/validator", "npm:13.12.2"],\
+          ["libphonenumber-js", "npm:1.12.6"],\
+          ["validator", "npm:13.12.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3906,6 +3962,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["libphonenumber-js", [\
+      ["npm:1.12.6", {\
+        "packageLocation": "../.yarn/berry/cache/libphonenumber-js-npm-1.12.6-31abae6347-10.zip/node_modules/libphonenumber-js/",\
+        "packageDependencies": [\
+          ["libphonenumber-js", "npm:1.12.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lines-and-columns", [\
       ["npm:1.2.4", {\
         "packageLocation": "../.yarn/berry/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-10.zip/node_modules/lines-and-columns/",\
@@ -5345,6 +5410,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/v8-compile-cache-lib-npm-3.0.1-4886071ece-10.zip/node_modules/v8-compile-cache-lib/",\
         "packageDependencies": [\
           ["v8-compile-cache-lib", "npm:3.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["validator", [\
+      ["npm:13.12.0", {\
+        "packageLocation": "../.yarn/berry/cache/validator-npm-13.12.0-6c8a423cbf-10.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.12.0"]\
         ],\
         "linkType": "HARD"\
       }]\
