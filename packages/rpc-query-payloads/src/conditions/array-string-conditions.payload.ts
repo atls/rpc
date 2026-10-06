@@ -12,7 +12,7 @@ export class ArrayStringConditionsPayload {
   @ValidateNested()
   get contains(): ArrayStringValuePayload | undefined {
     return this.conditions?.contains?.value
-      ? new ArrayStringValuePayload(this.conditions?.contains?.value)
+      ? new ArrayStringValuePayload(this.conditions.contains.value)
       : undefined
   }
 
@@ -20,7 +20,7 @@ export class ArrayStringConditionsPayload {
   @ValidateNested()
   get eq(): ArrayStringValuePayload | undefined {
     return this.conditions?.eq?.value
-      ? new ArrayStringValuePayload(this.conditions?.eq?.value)
+      ? new ArrayStringValuePayload(this.conditions.eq.value)
       : undefined
   }
 }

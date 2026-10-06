@@ -21,13 +21,13 @@ export class DateRangeConditionsPayload {
   @ValidateNested()
   get from(): DateValuePayload | undefined {
     return this.conditions?.from?.value
-      ? new DateValuePayload(this.conditions?.from?.value)
+      ? new DateValuePayload(this.conditions.from.value)
       : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get to(): DateValuePayload | undefined {
-    return this.conditions?.to?.value ? new DateValuePayload(this.conditions?.to?.value) : undefined
+    return this.conditions?.to?.value ? new DateValuePayload(this.conditions.to.value) : undefined
   }
 }
