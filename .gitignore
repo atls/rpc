@@ -46,11 +46,10 @@ node_modules
 dist/
 .next
 
-# JetBrains Files
-.idea/*
-!.idea/fileTemplates
-!.idea/file.template.settings.xml
+# JetBrains files
+.idea/
 *.iml
+.run/
 
 # Env
 .env
