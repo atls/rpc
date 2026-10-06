@@ -49,6 +49,7 @@ dist/
 # JetBrains files
 .idea/
 *.iml
+.run/
 
 # Env
 .env
