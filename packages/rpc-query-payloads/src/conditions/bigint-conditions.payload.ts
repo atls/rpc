@@ -12,8 +12,8 @@ export class BigIntConditionsPayload {
   @IsOptional()
   @ValidateNested()
   get eq(): BigIntValuePayload | undefined {
-    return this.conditions?.eq?.value && this.conditions?.eq?.value >= 0
-      ? new BigIntValuePayload(this.conditions?.eq?.value)
+    return this.conditions?.eq?.value && this.conditions.eq.value >= 0
+      ? new BigIntValuePayload(this.conditions.eq.value)
       : undefined
   }
 
@@ -21,7 +21,7 @@ export class BigIntConditionsPayload {
   @ValidateNested()
   get in(): BigIntsValuePayload | undefined {
     return this.conditions?.in?.values
-      ? new BigIntsValuePayload(this.conditions?.in?.values)
+      ? new BigIntsValuePayload(this.conditions.in.values)
       : undefined
   }
 }

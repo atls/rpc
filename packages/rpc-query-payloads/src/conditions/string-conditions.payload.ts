@@ -13,23 +13,21 @@ export class StringConditionsPayload {
   @ValidateNested()
   get contains(): StringValuePayload | undefined {
     return this.conditions?.contains?.value
-      ? new StringValuePayload(this.conditions?.contains?.value)
+      ? new StringValuePayload(this.conditions.contains.value)
       : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get eq(): StringValuePayload | undefined {
-    return this.conditions?.eq?.value
-      ? new StringValuePayload(this.conditions?.eq?.value)
-      : undefined
+    return this.conditions?.eq?.value ? new StringValuePayload(this.conditions.eq.value) : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get in(): StringsValuePayload | undefined {
     return this.conditions?.in?.values
-      ? new StringsValuePayload(this.conditions?.in?.values)
+      ? new StringsValuePayload(this.conditions.in.values)
       : undefined
   }
 }

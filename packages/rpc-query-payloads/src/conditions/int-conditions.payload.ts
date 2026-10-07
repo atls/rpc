@@ -12,16 +12,14 @@ export class IntConditionsPayload {
   @IsOptional()
   @ValidateNested()
   get eq(): IntValuePayload | undefined {
-    return this.conditions?.eq?.value && this.conditions?.eq?.value >= 0
-      ? new IntValuePayload(this.conditions?.eq?.value)
+    return this.conditions?.eq?.value && this.conditions.eq.value >= 0
+      ? new IntValuePayload(this.conditions.eq.value)
       : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get in(): IntsValuePayload | undefined {
-    return this.conditions?.in?.values
-      ? new IntsValuePayload(this.conditions?.in?.values)
-      : undefined
+    return this.conditions?.in?.values ? new IntsValuePayload(this.conditions.in.values) : undefined
   }
 }

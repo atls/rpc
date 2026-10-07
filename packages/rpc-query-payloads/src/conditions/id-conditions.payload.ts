@@ -14,21 +14,19 @@ export class IdConditionsPayload {
   @ValidateNested()
   get exists(): BooleanValuePayload | undefined {
     return this.conditions?.exists?.value === true || this.conditions?.exists?.value === false
-      ? new BooleanValuePayload(this.conditions?.exists?.value)
+      ? new BooleanValuePayload(this.conditions.exists.value)
       : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get eq(): IdValuePayload | undefined {
-    return this.conditions?.eq?.value ? new IdValuePayload(this.conditions?.eq?.value) : undefined
+    return this.conditions?.eq?.value ? new IdValuePayload(this.conditions.eq.value) : undefined
   }
 
   @IsOptional()
   @ValidateNested()
   get in(): IdsValuePayload | undefined {
-    return this.conditions?.in?.values
-      ? new IdsValuePayload(this.conditions?.in?.values)
-      : undefined
+    return this.conditions?.in?.values ? new IdsValuePayload(this.conditions.in.values) : undefined
   }
 }
