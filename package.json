@@ -20,6 +20,5 @@
     "eslint": "9.17.0",
     "typescript": "5.5.4"
   },
-  "packageManager": "yarn@4.18.0",
-  "typecheckSkipLibCheck": true
+  "packageManager": "yarn@4.18.0"
 }
